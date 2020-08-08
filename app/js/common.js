@@ -227,11 +227,11 @@ let $albumViewer = $('.albumViewer');
 let $photoCase = $('#photoCase');
 $('.photoCard').click(function(){
   if($(this).attr('id') == 'photoCard_0'){
-    $photoCase.attr({'src':'https://raw.githubusercontent.com/krpnkndrw/ArmsAndHunting/master/ArmsAndHunting2019_0.jpg'});
+    $photoCase.attr({'src':'../img/ArmsAndHunting2019_0.jpg'});
     albumTitle(0, 4, 2019);
   }
   else if($(this).attr('id') == 'photoCard_1'){
-    $photoCase.attr({'src':'https://raw.githubusercontent.com/krpnkndrw/ArmsAndHunting/master/ArmsAndHunting2018_0.jpg'});
+    $photoCase.attr({'src':'../img/ArmsAndHunting2018_0.jpg'});
     albumTitle(0, 2, 2018);
   }
   $albumViewer.fadeIn();
@@ -245,7 +245,7 @@ const albumChange = (direction) => {
   } else if (direction == 'left'){
     cnt = (+cnt == 0)?n:(+cnt -1);
   }
-  $photoCase.attr({'src':'https://raw.githubusercontent.com/krpnkndrw/ArmsAndHunting/master/ArmsAndHunting'+year+'_'+cnt+'.jpg'});
+  $photoCase.attr({'src':'../img/ArmsAndHunting'+year+'_'+cnt+'.jpg'});
   albumTitle(cnt, n, year);
 }
 $('#albumArrowRight').click(function(){
@@ -267,7 +267,7 @@ $albumViewer.fadeOut();
 /*ymaps.ready(function(){*/
 setTimeout(function(){ //поставил таймер, чтобы, пока пользователь находится на секциях с фоном, парралакс работал.
   console.log(
-    'Параллакс багует из-за яндекс карты. Если подождать с выключенным DevTools, то он отвиснет и станет плавным. Если сдвинуть карту, то параллакс опять подвиснет на секунд 20. Как фиксить я пока не понял.'
+    'Параллакс багует из-за яндекс карты. Если подождать с выключенным DevTools, то он отвиснет и станет плавным. Если сдвинуть карту, то параллакс опять подвиснет на секунд 20. Как фиксить я не понял.'
   );
     var myMap = new ymaps.Map("map", {
         center: [55.753613, 37.626034],

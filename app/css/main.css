@@ -91,7 +91,7 @@ a{
   position: fixed;
 }
 .firstPlan{
-  background-image: url(https://github.com/krpnkndrw/ArmsAndHunting/blob/master/gun.png?raw=true);
+  background-image: url(../img/gun.png);
   width: 120%;
   height: 120%;
   background-size: cover;
@@ -110,7 +110,7 @@ a{
   transition: ease-out 0.5s;
 }
 .secondPlan{
-  background-image: url(https://github.com/krpnkndrw/ArmsAndHunting/blob/master/paper.jpg?raw=true);
+  background-image: url(../img/paper.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
